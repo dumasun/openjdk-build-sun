@@ -18,6 +18,6 @@ limitations under the License.
 def path = "pipelines/library"
 sh("cd ${path} && git init && git add --all . && git config user.email 'none' && git config user.name 'none' && git commit -m init &> /dev/null || true")
 def repoPath = sh(returnStdout: true, script: "pwd").trim() + "/" + path;
-library(identifier: 'local-lib@master', retriever: modernSCM([$class: 'GitSCMSource', remote: repoPath]))
+//library(identifier: 'local-lib@master', retriever: modernSCM([$class: 'GitSCMSource', remote: repoPath]))
 
 
