@@ -2,4 +2,5 @@
 
 
 echo  "test.sh"
+echo "success"
 
